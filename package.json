@@ -1,0 +1,9 @@
+{
+  "name": "readable-stream-scalajs",
+  "version": "0.3.1",
+  "private": true,
+  "dependencies": {
+    "readable-stream": "^2.2.2",
+    "source-map": "^0.5.6"
+  }
+}
