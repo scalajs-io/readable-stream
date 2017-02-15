@@ -1,21 +1,29 @@
-Readable-stream API for Scala.js
+ReadableStream API for Scala.js
 ================================
-This is a Scala.js type-safe binding for [Readable-stream](https://www.npmjs.com/package/readable-stream)
+[readable-stream](https://www.npmjs.com/package/readable-stream) - A Streams3, a user-land copy of the stream library from Node.js
 
-A Streams3, a user-land copy of the stream library from Node.js
+### Description
 
-#### Build Dependencies
+This package is a mirror of the Streams2 and Streams3 implementations in Node-core.
+
+Full documentation may be found on the [Node.js website](https://nodejs.org/dist/v7.4.0/docs/api/).
+
+If you want to guarantee a stable streams base, regardless of what version of Node you, or the users of your 
+libraries are using, use readable-stream only and avoid the "stream" module in Node-core, for background see 
+[this blogpost](https://r.va.gg/2014/06/why-i-dont-use-nodes-core-stream-module.html).
+
+### Build Dependencies
 
 * [ScalaJs.io v0.3.x](https://github.com/ldaniels528/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
-#### Build/publish the SDK locally
+### Build/publish the SDK locally
 
 ```bash
  $ sbt clean publish-local
 ```
 
-#### Running the tests
+### Running the tests
 
 Before running the tests the first time, you must ensure the npm packages are installed:
 
@@ -29,7 +37,7 @@ Then you can run the tests:
 $ sbt test
 ```
 
-#### Examples
+### Examples
 
 ```scala
 import io.scalajs.nodejs.buffer.Buffer
@@ -47,13 +55,14 @@ bulk.pipe(process.stdout)
 ```
 
 ##### Output:
+
 ```text
 ABCDEF
 ```
 
-#### Artifacts and Resolvers
+### Artifacts and Resolvers
 
-To add the Moment binding to your project, add the following to your build.sbt:  
+To add the `ReadableStream` binding to your project, add the following to your build.sbt:  
 
 ```sbt
 libraryDependencies += "io.scalajs.npm" %%% "readable-stream" % "2.2.2"

@@ -1,6 +1,6 @@
 {
-  "name": "readable-stream-scalajs",
-  "version": "0.3.1",
+  "name": "readable-stream-sjs",
+  "version": "2.2.2",
   "private": true,
   "dependencies": {
     "readable-stream": "^2.2.2",
