@@ -14,7 +14,6 @@ libraries are using, use readable-stream only and avoid the "stream" module in N
 
 ### Build Dependencies
 
-* [ScalaJs.io v0.3.x](https://github.com/ldaniels528/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
 ### Build/publish the SDK locally
@@ -65,7 +64,7 @@ ABCDEF
 To add the `ReadableStream` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "readable-stream" % "2.2.2"
+libraryDependencies += "io.scalajs.npm" %%% "readable-stream" % "2.2.2-2"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
