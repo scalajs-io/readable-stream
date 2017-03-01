@@ -26,7 +26,7 @@ lazy val root = (project in file(".")).
     libraryDependencies ++= Seq(
       "org.scala-lang" % "scala-reflect" % scalaJsVersion,
       "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
-      "io.scalajs" %%% "nodejs" % "7.4.0"
+      "io.scalajs" %%% "nodejs" % scalaJsIOVersion 
     ))
 
 /////////////////////////////////////////////////////////////////////////////////
