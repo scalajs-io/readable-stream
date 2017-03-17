@@ -64,7 +64,7 @@ ABCDEF
 To add the `ReadableStream` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "readable-stream" % "2.2.2-2"
+libraryDependencies += "io.scalajs.npm" %%% "readable-stream" % "2.2.2-3"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:

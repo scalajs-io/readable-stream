@@ -1,6 +1,6 @@
 {
   "name": "readable-stream-sjs",
-  "version": "2.2.2-2",
+  "version": "2.2.2-3",
   "private": true,
   "dependencies": {
     "readable-stream": "^2.2.2",
